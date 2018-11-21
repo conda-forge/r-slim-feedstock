@@ -14,9 +14,9 @@ source:
   sha256: 416d39294d7d24ab95d73cf46af79ca72cca43432ff157902e81576ab8992b75
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -47,8 +47,7 @@ about:
     and are extensions of the linear increments model <doi:10.1111/j.1467-9876.2007.00590.x>
     to general longitudinal data.   '
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
