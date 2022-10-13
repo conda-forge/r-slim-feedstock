@@ -3,7 +3,7 @@ About r-slim
 
 Home: https://CRAN.R-project.org/package=slim
 
-Package license: GPL-3
+Package license: GPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-slim-feedstock/blob/main/LICENSE.txt)
 
