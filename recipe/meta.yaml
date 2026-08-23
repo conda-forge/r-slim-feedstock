@@ -1,4 +1,4 @@
-{% set version = '0.1.1' %}
+{% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,11 +9,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/slim_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/slim/slim_{{ version }}.tar.gz
-  sha256: 416d39294d7d24ab95d73cf46af79ca72cca43432ff157902e81576ab8992b75
+  sha256: 79329392bf92082ba358e0f95b4eada100d6e98d0a0f98fd10f5d26af40230e7
 
 build:
   noarch: generic
-  number: 1006
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -39,11 +39,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=slim
   license: GPL-3.0-only
-  summary: 'Fits singular linear models to longitudinal data. Singular linear models are useful
-    when the number, or timing, of longitudinal observations may be informative about
-    the observations themselves. They are described in Farewell (2010) <doi:10.1093/biomet/asp068>,
-    and are extensions of the linear increments model <doi:10.1111/j.1467-9876.2007.00590.x>
-    to general longitudinal data.   '
+  summary: 'Fits singular linear models to longitudinal data. Singular linear models are useful when the number, or timing, of longitudinal observations may be informative about the observations themselves. They are described in Farewell (2010) <doi:10.1093/biomet/asp068>, and are extensions of the linear increments model
+    <doi:10.1111/j.1467-9876.2007.00590.x> to general longitudinal data.   '
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
